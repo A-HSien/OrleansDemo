@@ -1,0 +1,1 @@
+start "Client" dist/OrleansClient_WinX64Release/OrleansClient.exe

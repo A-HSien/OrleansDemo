@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdoNetStorageDemo.IActors", "src\AdoNetStorageDemo.IActors\AdoNetStorageDemo.IActors.csproj", "{EA16C1E0-1DEA-48D5-A55D-E99C6F8DF296}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdoNetStorageDemo.Web", "src\AdoNetStorageDemo.Web\AdoNetStorageDemo.Web.csproj", "{F7709600-9DDC-4AE7-BEC2-B4EADBA0D0B1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA16C1E0-1DEA-48D5-A55D-E99C6F8DF296}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA16C1E0-1DEA-48D5-A55D-E99C6F8DF296}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA16C1E0-1DEA-48D5-A55D-E99C6F8DF296}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA16C1E0-1DEA-48D5-A55D-E99C6F8DF296}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7709600-9DDC-4AE7-BEC2-B4EADBA0D0B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7709600-9DDC-4AE7-BEC2-B4EADBA0D0B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7709600-9DDC-4AE7-BEC2-B4EADBA0D0B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7709600-9DDC-4AE7-BEC2-B4EADBA0D0B1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7F16E315-C2D5-40F6-9E2E-AAA86A790FB5}
+	EndGlobalSection
+EndGlobal
