@@ -8,7 +8,7 @@ namespace AdoNetStorageDemo.Actors
 {
     public class CustomerState
     {
-        public string Name { get; internal set; }
+        public string Name { get; set; }
     }
 
     [StorageProvider(ProviderName = "OrleansStorage")]

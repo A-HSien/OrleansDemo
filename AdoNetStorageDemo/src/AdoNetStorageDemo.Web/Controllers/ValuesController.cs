@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Orleans;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace AdoNetStorageDemo.Web.Controllers
@@ -22,12 +23,18 @@ namespace AdoNetStorageDemo.Web.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<string>>> Get()
         {
-            var id = Guid.NewGuid();
-            var grain = client.GetGrain<ICustomer>(id);
+            var id = Guid.Parse("c394edd6-9c8b-41df-b97d-09eb48f1de63");
+            var customer = client.GetGrain<ICustomer>(id);
             var name = $"Customer-{id}";
-            await grain.SetName(name);
-            var newName = await grain.GetName();
-            var result = (newName == name);
+            var newName = await customer.GetName();
+            var result1 = (newName == name);
+
+
+            var allCustomer = client.GetGrain<ICustomers>("AllCustomer");
+            await allCustomer.AddCustomer(customer);
+            var all = await allCustomer.GetAllCustomer();
+            var result2 = all.Any(e => e.GetName().Result == name);
+
             return new string[] { "value1", "value2" };
         }
 
