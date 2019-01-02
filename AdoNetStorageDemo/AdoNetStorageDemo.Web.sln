@@ -5,7 +5,11 @@ VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdoNetStorageDemo.IActors", "src\AdoNetStorageDemo.IActors\AdoNetStorageDemo.IActors.csproj", "{EA16C1E0-1DEA-48D5-A55D-E99C6F8DF296}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdoNetStorageDemo.Web", "src\AdoNetStorageDemo.Web\AdoNetStorageDemo.Web.csproj", "{F7709600-9DDC-4AE7-BEC2-B4EADBA0D0B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdoNetStorageDemo.Web.Test", "AdoNetStorageDemo.Web.Test\AdoNetStorageDemo.Web.Test.csproj", "{4B4A3E6B-F5B0-480D-9B3C-ACDC0C5589CC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdoNetStorageDemo.Web", "src\AdoNetStorageDemo.Web\AdoNetStorageDemo.Web.csproj", "{4FF42968-EC3B-45D3-85CF-5148E94EED09}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdoNetStorageDemo.Actors", "src\AdoNetStorageDemo.Actors\AdoNetStorageDemo.Actors.csproj", "{F4A83C09-405E-44BF-915E-3A4328CFB63F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +21,18 @@ Global
 		{EA16C1E0-1DEA-48D5-A55D-E99C6F8DF296}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA16C1E0-1DEA-48D5-A55D-E99C6F8DF296}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA16C1E0-1DEA-48D5-A55D-E99C6F8DF296}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F7709600-9DDC-4AE7-BEC2-B4EADBA0D0B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F7709600-9DDC-4AE7-BEC2-B4EADBA0D0B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F7709600-9DDC-4AE7-BEC2-B4EADBA0D0B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F7709600-9DDC-4AE7-BEC2-B4EADBA0D0B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B4A3E6B-F5B0-480D-9B3C-ACDC0C5589CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B4A3E6B-F5B0-480D-9B3C-ACDC0C5589CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B4A3E6B-F5B0-480D-9B3C-ACDC0C5589CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B4A3E6B-F5B0-480D-9B3C-ACDC0C5589CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FF42968-EC3B-45D3-85CF-5148E94EED09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FF42968-EC3B-45D3-85CF-5148E94EED09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FF42968-EC3B-45D3-85CF-5148E94EED09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FF42968-EC3B-45D3-85CF-5148E94EED09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4A83C09-405E-44BF-915E-3A4328CFB63F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4A83C09-405E-44BF-915E-3A4328CFB63F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4A83C09-405E-44BF-915E-3A4328CFB63F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4A83C09-405E-44BF-915E-3A4328CFB63F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

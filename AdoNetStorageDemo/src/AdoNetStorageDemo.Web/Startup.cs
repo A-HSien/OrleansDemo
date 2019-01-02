@@ -32,7 +32,7 @@ namespace AdoNetStorageDemo.Web
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            app.UseStaticFiles();
             app.UseMvc();
         }
 

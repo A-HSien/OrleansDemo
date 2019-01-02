@@ -75,7 +75,7 @@ namespace AdoNetStorageDemo.Service
                         options.ServiceId = "dev";
                     })
                     .Configure<EndpointOptions>(options => options.AdvertisedIPAddress = IPAddress.Loopback)
-                    .ConfigureApplicationParts(parts => parts.AddApplicationPart(typeof(Customer).Assembly).WithReferences())
+                    .ConfigureApplicationParts(parts => parts.AddApplicationPart(typeof(CustomerGrain).Assembly).WithReferences())
                     .ConfigureLogging(logging =>
                     {
                         logging.AddConsole();

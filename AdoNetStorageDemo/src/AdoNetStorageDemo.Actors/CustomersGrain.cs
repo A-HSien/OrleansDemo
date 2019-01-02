@@ -10,31 +10,32 @@ namespace AdoNetStorageDemo.Actors
 {
     public class CustomersState
     {
-        public IList<ICustomer> AllCustomer { get; set; } = new List<ICustomer>();
+        public List<ICustomerGrain> AllCustomerGrains { get; set; } = new List<ICustomerGrain>();
     }
 
     [StorageProvider(ProviderName = "OrleansStorage")]
-    public class Customers : Grain<CustomersState>, ICustomers
+    public class CustomersGrain : Grain<CustomersState>, ICustomersGrain
     {
         private readonly ILogger logger;
 
-        public Customers(ILogger<Customers> logger)
+        public CustomersGrain(ILogger<CustomersGrain> logger)
         {
             this.logger = logger;
         }
 
-        public Task<IList<ICustomer>> GetAllCustomer()
+        public Task<IEnumerable<ICustomerGrain>> GetAllCustomers()
         {
-            return Task.FromResult(State.AllCustomer);
+            return Task.FromResult(State.AllCustomerGrains.AsEnumerable());
         }
 
-        public async Task AddCustomer(ICustomer newCustomer)
+        public async Task AddCustomer(ICustomerGrain newCustomer)
         {
-            if (State.AllCustomer.Any(e =>
+            if (State.AllCustomerGrains.Any(e =>
                 e.GetGrainIdentity() == newCustomer.GetGrainIdentity()
             )) return;
 
-            State.AllCustomer.Add(newCustomer);
+
+            State.AllCustomerGrains.Add(newCustomer);
             await WriteStateAsync();
             return;
         }
